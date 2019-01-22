@@ -1,0 +1,6 @@
+framework module Pods_XVIEWLocationManager_Tests {
+  umbrella header "Pods-XVIEWLocationManager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module XVIEWLocationManager {
+  umbrella header "XVIEWLocationManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

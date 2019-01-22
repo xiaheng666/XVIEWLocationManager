@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46397A41DD6F08A526CE8F63 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		46397A41DD6F08A526CE8F63 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		478DBE05148480A89A263F8B /* Pods-XVIEWLocationManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XVIEWLocationManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XVIEWLocationManager_Example/Pods-XVIEWLocationManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		59DAFAEB7DFABF568837420C /* Pods_XVIEWLocationManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XVIEWLocationManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* XVIEWLocationManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XVIEWLocationManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,9 +63,9 @@
 		7C8B09A14E71B6391D2C9B21 /* Pods-XVIEWLocationManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XVIEWLocationManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XVIEWLocationManager_Example/Pods-XVIEWLocationManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7F22426880AAEC60C1E99F05 /* Pods-XVIEWLocationManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XVIEWLocationManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XVIEWLocationManager_Tests/Pods-XVIEWLocationManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		96B1A2725DADF82A04F715B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		96B1A2725DADF82A04F715B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A544B2EACCC41A10898B491B /* Pods_XVIEWLocationManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XVIEWLocationManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A14596DA4EEF6716BD4AC7 /* XVIEWLocationManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XVIEWLocationManager.podspec; path = ../XVIEWLocationManager.podspec; sourceTree = "<group>"; };
+		C0A14596DA4EEF6716BD4AC7 /* XVIEWLocationManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XVIEWLocationManager.podspec; path = ../XVIEWLocationManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CE5093FE0AD55A9A8E763D89 /* Pods-XVIEWLocationManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XVIEWLocationManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XVIEWLocationManager_Tests/Pods-XVIEWLocationManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				932029A0C8D49113433E5032 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +246,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = maomao520benben;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 24N474AU9T;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -310,24 +312,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		932029A0C8D49113433E5032 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XVIEWLocationManager_Example/Pods-XVIEWLocationManager_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/XVIEWLocationManager/XVIEWLocationManager.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XVIEWLocationManager.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XVIEWLocationManager_Example/Pods-XVIEWLocationManager_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C76B8C49347D6D1DD789EBFA /* [CP] Check Pods Manifest.lock */ = {
@@ -485,6 +469,7 @@
 			baseConfigurationReference = 478DBE05148480A89A263F8B /* Pods-XVIEWLocationManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24N474AU9T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XVIEWLocationManager/XVIEWLocationManager-Prefix.pch";
 				INFOPLIST_FILE = "XVIEWLocationManager/XVIEWLocationManager-Info.plist";
@@ -500,6 +485,7 @@
 			baseConfigurationReference = 7C8B09A14E71B6391D2C9B21 /* Pods-XVIEWLocationManager_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24N474AU9T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XVIEWLocationManager/XVIEWLocationManager-Prefix.pch";
 				INFOPLIST_FILE = "XVIEWLocationManager/XVIEWLocationManager-Info.plist";

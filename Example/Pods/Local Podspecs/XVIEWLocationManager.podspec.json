@@ -1,0 +1,30 @@
+{
+  "name": "XVIEWLocationManager",
+  "version": "0.1.0",
+  "summary": "高德定位",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/xiaheng666/XVIEWLocationManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xiaheng666": "key@xiaheng.net"
+  },
+  "source": {
+    "git": "git@github.com:xiaheng666/XVIEWLocationManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XVIEWLocationManager/Classes/*.h",
+  "ios": {
+    "vendored_libraries": "XVIEWLocationManager/Classes/*.a"
+  },
+  "dependencies": {
+    "AMapLocation": [
+
+    ]
+  }
+}

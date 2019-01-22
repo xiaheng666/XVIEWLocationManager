@@ -1,0 +1,27 @@
+PODS:
+  - AMapFoundation (1.5.6)
+  - AMapLocation (2.6.1):
+    - AMapFoundation (~> 1.4)
+  - XVIEWLocationManager (0.1.0):
+    - AMapLocation
+
+DEPENDENCIES:
+  - XVIEWLocationManager (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AMapFoundation
+    - AMapLocation
+
+EXTERNAL SOURCES:
+  XVIEWLocationManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AMapFoundation: 20fce2a12cd152e1092afdd04379cdac21932185
+  AMapLocation: cf024b53dc03663efb4ea4bcce27d4cce58bb97a
+  XVIEWLocationManager: e909b7bb3bdef7eba069d3c77dae6427794535f7
+
+PODFILE CHECKSUM: c1d8b3c2940c209844d33b8667ebf2889af92041
+
+COCOAPODS: 1.5.3
